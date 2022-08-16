@@ -1,5 +1,187 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ----------***HEADER-AND-NAVIGATION-BAR---------- */
+
+body {
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  height: 8vh;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  width: 83.3%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+p.logo {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+span {
+  color: #f9b500;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #f9b500;
+  transition: all 0.15s ease-out;
+}
+
+a.sign {
+  border: solid 2px #f9b500;
+  padding: 7px 17px;
+  border-radius: 10px;
+}
+
+a#sign:hover{
+    background-color: #f9b500;
+    color: whitesmoke;
+    transition: all 0.15s ease-out;
+}
+
+/* ----------HEADER-AND-NAVIGATION-BAR***---------- */
+
+/* ----------***IFO-BAR-SECTION---------- */
+
+section.info-bar-section {
+  width: 83.3%;
+  height: 92vh;
+}
+
+section.info-bar {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 30px;
+}
+
+.card-color {
+  background-color: #f9b500;
+  border-radius: 16px;
+}
+
+div.info-1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background: url(images/Image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 900px auto;
+  background-position: center;
+}
+
+div.info-2 {
+    background: url(images/Image-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 410px auto;
+}
+
+div.info-3 {
+    background: url(images/Image-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 410px auto;
+}
+
+div.info-4 {
+    background: url(images/Image-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 410px auto;
+}
+
+div.info-5 {
+    background: url(images/Image-5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 410px auto;
+}
+
+div.info-6 {
+    background: url(images/Image-6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 410px auto;
+}
+
+/* ----------IFO-BAR-SECTION***---------- */
+
+/* ---------**NEWS-SECTION---------- */
+
+section.news-section{
+    width: 83.3%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px
+    /* background-color: red; */
+}
+
+section.news-section-1{
+    width: 66.6%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+section.news-section-2{
+    width: 33.4%;
+    height: 100%;
+    /* background-color: black; */
+    /* opacity: 50%; */
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    gap: 30px;
+    justify-items: center;
+}
+
+.price-box{
+    width: 75%;
 }
