@@ -61,7 +61,7 @@ a {
   text-decoration: none;
   color: inherit;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 a:hover {
@@ -75,10 +75,10 @@ a.sign {
   border-radius: 10px;
 }
 
-a#sign:hover{
-    background-color: #f9b500;
-    color: whitesmoke;
-    transition: all 0.15s ease-out;
+a#sign:hover {
+  background-color: #f9b500;
+  color: whitesmoke;
+  transition: all 0.15s ease-out;
 }
 
 /* ----------HEADER-AND-NAVIGATION-BAR***---------- */
@@ -116,72 +116,254 @@ div.info-1 {
 }
 
 div.info-2 {
-    background: url(images/Image-2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 410px auto;
+  background: url(images/Image-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 410px auto;
 }
 
 div.info-3 {
-    background: url(images/Image-3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 410px auto;
+  background: url(images/Image-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 410px auto;
 }
 
 div.info-4 {
-    background: url(images/Image-4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 410px auto;
+  background: url(images/Image-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 410px auto;
 }
 
 div.info-5 {
-    background: url(images/Image-5.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 410px auto;
+  background: url(images/Image-5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 410px auto;
 }
 
 div.info-6 {
-    background: url(images/Image-6.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 410px auto;
+  background: url(images/Image-6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 410px auto;
 }
 
 /* ----------IFO-BAR-SECTION***---------- */
 
 /* ---------**NEWS-SECTION---------- */
 
-section.news-section{
-    width: 83.3%;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 80px
-    /* background-color: red; */
+section.news-section {
+  width: 83.3%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 60px;
 }
 
-section.news-section-1{
-    width: 66.6%;
-    height: 100%;
-    /* background-color: blue; */
+section.news-section-1 {
+  width: 66.6%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-section.news-section-2{
-    width: 33.4%;
-    height: 100%;
-    /* background-color: black; */
-    /* opacity: 50%; */
-    padding-left: 30px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto auto auto;
-    gap: 30px;
-    justify-items: center;
+section.news-section-2 {
+  width: 33.4%;
+  height: 100%;
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  gap: 30px;
+  justify-items: center;
 }
 
-.price-box{
-    width: 75%;
+div.recent-news-header {
+  width: 100%;
+  height: 8%;
+  border-bottom: 2px solid #302d38;
+}
+
+h6.news-header {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 13px;
+}
+
+div.news-1 {
+  width: 100%;
+  height: 92%;
+  padding-top: 36px;
+}
+
+div.news-image-1 {
+  width: 100%;
+  height: 72%;
+  border-radius: 16px;
+  background: url(images/Image-7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 870px auto;
+}
+
+.price-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-box-text {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+div.text-news {
+  width: 100%;
+  height: 28%;
+  padding-top: 30px;
+}
+
+.text-news-p {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.text-news-p-1 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.text-news-p-2 {
+  font-size: 16px;
+  color: #434148;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+/* ---------NEWS-SECTION**---------- */
+
+/* ----------**MINING-NEWS-SECTION---------- */
+
+section.mining-news-section {
+  width: 83.3%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: red; */
+}
+
+section.mining-news-section-1 {
+  width: 66.6%;
+  height: 100%;
+}
+
+div.mining-news-header {
+  width: 100%;
+  height: 6%;
+  border-bottom: 2px solid #302d38;
+}
+
+h6.mining-news {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+section.mining-news-section-2 {
+  width: 33.4%;
+  height: 100%;
+  padding-left: 30px;
+}
+
+div.mining-news-news {
+  width: 100%;
+  height: 94%;
+  padding-top: 36px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 30px;
+}
+
+div.news-2-image {
+  width: 100;
+  height: 75%;
+  border-radius: 16px;
+  background: url(images/Image-8.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 420px auto;
+}
+
+div.news-3-image {
+  width: 100;
+  height: 75%;
+  border-radius: 16px;
+  background: url(images/Image-9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 420px auto;
+}
+
+div.news-4-image {
+  width: 100;
+  height: 75%;
+  border-radius: 16px;
+  background: url(images/Image-10.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 420px auto;
+}
+
+div.news-5-image {
+  width: 100;
+  height: 75%;
+  border-radius: 16px;
+  background: url(images/Image-11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 420px auto;
+}
+
+div.popular-section {
+  width: 100%;
+  height: 94%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  gap: 20px;
+}
+
+div.popular-1{
+  grid-row: 1/span 3;
+  background-color: rebeccapurple;
+}
+
+div.popular-2{
+  grid-row: 4/span 3;
+  background-color: rebeccapurple;
+}
+
+div.subscribe-section{
+  background-color: rebeccapurple;
+}
+
+div.news-2 {
+  background-color: #f9b500;
+}
+
+div.news-3 {
+  background-color: #f9b500;
+}
+
+div.news-4 {
+  background-color: #f9b500;
+}
+
+div.news-5 {
+  background-color: #f9b500;
 }
