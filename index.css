@@ -117,14 +117,73 @@ div.info-1 {
   background-repeat: no-repeat;
   background-size: 900px auto;
   background-position: center;
+  padding-bottom: 10px;
+  padding-left: 35px;
   display: flex;
   flex-direction: column-reverse;
+  transition: all 0.5s ease-out;
 }
 
-div.info-1-txt{
+div.info-1:hover {
+  background-size: 1000px auto;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+div.l-info-txt {
   width: 100%;
   height: 60px;
-  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h6.l-info-txt-h6 {
+  height: 50%;
+  font-size: 20px;
+  font-weight: 900;
+  color: whitesmoke;
+}
+
+.l-info-container {
+  width: 60%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.l-info-container-txt {
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.s-info-txt {
+  width: 90%;
+  height: 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.s-info-txt-h6 {
+  height: 50%;
+  color: whitesmoke;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.s-info-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.s-info-container-txt {
+  color: whitesmoke;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 div.info-2 {
@@ -132,6 +191,17 @@ div.info-2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 410px auto;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  transition: all 0.5s ease-out;
+}
+
+div.info-2:hover {
+  background-size: 500px auto;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 div.info-3 {
@@ -139,6 +209,17 @@ div.info-3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 410px auto;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  transition: all 0.5s ease-out;
+}
+
+div.info-3:hover {
+  background-size: 500px auto;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 div.info-4 {
@@ -146,6 +227,17 @@ div.info-4 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 410px auto;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  transition: all 0.5s ease-out;
+}
+
+div.info-4:hover {
+  background-size: 500px auto;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 div.info-5 {
@@ -153,6 +245,17 @@ div.info-5 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 410px auto;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  transition: all 0.5s ease-out;
+}
+
+div.info-5:hover {
+  background-size: 500px auto;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 div.info-6 {
@@ -160,31 +263,42 @@ div.info-6 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 410px auto;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  transition: all 0.5s ease-out;
+}
+
+div.info-6:hover {
+  background-size: 500px auto;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 /* ----------IFO-BAR-SECTION***---------- */
 
 /* ---------***NEWS-SECTION---------- */
 
-section.news-section {
+section.news-sec {
   width: 83.3%;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
-section.news-section-1 {
+section.news-sec-1 {
   width: 66.6%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-section.news-section-2 {
+section.news-sec-2 {
   width: 33.4%;
   height: 100%;
-  padding-left: 30px;
+  padding-left: 50px;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto;
@@ -195,13 +309,16 @@ section.news-section-2 {
 div.recent-news-header {
   width: 100%;
   height: 8%;
-  border-bottom: 2px solid #302d38;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid #626068;
 }
 
 h6.news-header {
   font-size: 20px;
   font-weight: 800;
-  margin-top: 13px;
+  color: #202020;
 }
 
 div.news-1 {
@@ -227,49 +344,57 @@ div.news-image-1 {
   align-items: center;
 }
 
-.price-box-text {
+.price-box-txt {
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 500;
+  color: #202020;
 }
 
-div.text-news {
+div.txt-news {
   width: 100%;
   height: 28%;
-  padding-top: 30px;
+  padding-top: 35px;
 }
 
-.text-news-p {
-  display: grid;
-  grid-template-columns: 100px auto;
-  grid-template-rows: auto;
-  gap: 10px;
+.txt-news-p {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.text-news-p-1 {
+.txt-news-p-1 {
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 900;
+  color: #202020;
 }
 
-.text-news-p-2 {
+.txt-news-p-2 {
   font-size: 16px;
-  color: #434148;
+  color: #626068;
   font-weight: 500;
   margin-top: 5px;
+}
+
+.txt-news-a {
+  font-size: 16px;
+  color: #626068;
+  font-weight: 500;
+  transition: all 0.15s ease-out;
 }
 
 /* ---------NEWS-SECTION***---------- */
 
 /* ----------***MINING-NEWS-SECTION---------- */
 
-section.mining-news-section {
+section.mining-news-sec {
   width: 83.3%;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  /* background-color: red; */
 }
 
-section.mining-news-section-1 {
+section.mining-news-sec-1 {
   width: 66.6%;
   height: 100%;
 }
@@ -277,18 +402,19 @@ section.mining-news-section-1 {
 div.mining-news-header {
   width: 100%;
   height: 6%;
-  border-bottom: 2px solid #302d38;
+  border-bottom: 1px solid #302d38;
 }
 
 h6.mining-news {
+  color: #202020;
   font-size: 20px;
   font-weight: 800;
 }
 
-section.mining-news-section-2 {
+section.mining-news-sec-2 {
   width: 33.4%;
   height: 100%;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 
 div.mining-news-news {
@@ -341,49 +467,66 @@ div.news-5-image {
   background-size: 420px auto;
 }
 
-.news-2-text {
+.news-2-txt {
   width: 100%;
   height: 25%;
   padding-top: 25px;
 }
 
-.text-news-2-container {
+.txt-news-p-1 {
+  color: #202020;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.txt-news-p-2 {
+  color: #626068;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.txt-news-2-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 0px;
 }
 
-div.popular-section {
+div.popular-sec {
   width: 100%;
   height: 94%;
   padding-top: 36px;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto 120px;
   gap: 30px;
 }
 
 div.popular-1 {
   grid-row: 1 / span 3;
-  /* background-color: rebeccapurple; */
 }
 
 div.popular-2 {
   grid-row: 4 / span 3;
-  /* background-color: rebeccapurple; */
 }
 
-div.subscribe-section {
-  background-color: rebeccapurple;
+div.subscribe-sec {
+  width: 100%;
+  /* background-color: aqua; */
+  padding-bottom: 15px;
 }
 
-div.subscribe-text-container {
+div.subscribe-txt-container {
   width: 100%;
   height: 50%;
+  border-top: 1px solid #302d38;
+  padding-top: 15px;
+  margin-top: 10px;
 }
 
-p.subscribe-text {
-  font-size: 16px;
+p.subscribe-txt {
+  color: #202020;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -397,12 +540,26 @@ input.input-email {
   height: 30px;
   margin-top: 15px;
   border: 2px solid #f9b500;
-  border-radius: 7px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+
+input.input-email:-ms-input-placeholder{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 10px;
 }
 
 input.input-submit {
+  color: #f4f4f4;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
   width: 25%;
   height: 30px;
+  margin-left: 10px;
+  background-color: #f9b500;
 }
 
 /* ----------MINING-NEWS-SECTION***---------- */
