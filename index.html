@@ -9,7 +9,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
     </style>
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <title>BITNEWS</title>
   </head>
   <body>
     <header>
@@ -17,7 +17,7 @@
         <a href="#"
           ><p class="logo"><span>BIT</span>NEWS</p></a
         >
-        <ul>
+        <ul class="header-ul">
           <li><a href="#">News</a></li>
           <li><a href="#">Guides & Analytics</a></li>
           <li><a href="#">Events</a></li>
@@ -25,11 +25,23 @@
           <li><a href="#">Calender</a></li>
         </ul>
         <p><a href="#" class="sign-btn" id="sign-btn">Sign</a></p>
+        <div class="burger-icon" onclick="burgerMenu()">
+          <i class="ri-menu-line"></i>
+        </div>
       </nav>
+      <div class="burger-sec" id="burger-sec">
+        <ul class="burger-ul">
+          <li><a href="#">News</a></li>
+          <li><a href="#">Guides & Analytics</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Explained</a></li>
+          <li><a href="#">Calender</a></li>
+        </ul>
+      </div>
     </header>
     <section class="info-bar-sec">
       <section class="info-bar">
-        <div class="info-1 card-color">
+        <a class="info-1 card-color" href="#">
           <div class="l-info-txt">
             <div>
               <h6 class="l-info-txt-h6">Peter Thiele VC found invests million into Bitcoin, Market reacts.</h6>
@@ -40,8 +52,8 @@
               <p class="l-info-container-txt">30,190</p>
             </div>
           </div>
-        </div>
-        <div class="info-2 card-color">
+        </a>
+        <a class="info-2 card-color" href="#">
           <div class="s-info-txt">
             <div>
               <h6 class="s-info-txt-h6">Peter Thiele VC found invests million into Bitcoin, Market reacts.</h6>
@@ -50,8 +62,8 @@
               <p class="s-info-container-txt">By “Olivia Capzalla”, Jan 25, 2022</p>
             </div>
           </div>
-        </div>
-        <div class="info-3 card-color">
+        </a>
+        <a class="info-3 card-color" href="#">
           <div class="s-info-txt">
             <div>
               <h6 class="s-info-txt-h6">Peter Thiele VC found invests million into Bitcoin, Market reacts.</h6>
@@ -60,8 +72,8 @@
               <p class="s-info-container-txt">By “Olivia Capzalla”, Jan 25, 2022</p>
             </div>
           </div>
-        </div>
-        <div class="info-4 card-color">
+        </a>
+        <a class="info-4 card-color" href="#">
           <div class="s-info-txt">
             <div>
               <h6 class="s-info-txt-h6">Peter Thiele VC found invests million into Bitcoin, Market reacts.</h6>
@@ -70,8 +82,8 @@
               <p class="s-info-container-txt">By “Olivia Capzalla”, Jan 25, 2022</p>
             </div>
           </div>
-        </div>
-        <div class="info-5 card-color">
+        </a>
+        <a class="info-5 card-color" href="#">
           <div class="s-info-txt">
             <div>
               <h6 class="s-info-txt-h6">Peter Thiele VC found invests million into Bitcoin, Market reacts.</h6>
@@ -80,8 +92,8 @@
               <p class="s-info-container-txt">By “Olivia Capzalla”, Jan 25, 2022</p>
             </div>
           </div>
-        </div>
-        <div class="info-6 card-color">
+        </a>
+        <a class="info-6 card-color" href="#">
           <div class="s-info-txt">
             <div>
               <h6 class="s-info-txt-h6">Peter Thiele VC found invests million into Bitcoin, Market reacts.</h6>
@@ -90,7 +102,7 @@
               <p class="s-info-container-txt">By “Olivia Capzalla”, Jan 25, 2022</p>
             </div>
           </div>
-        </div>
+        </a>
       </section>
     </section>
     <section class="news-sec">
@@ -99,31 +111,35 @@
           <h6 class="news-header-h6">Recent NEWS</h6>
         </div>
         <div class="news-1">
-          <div class="news-image-1"></div>
-          <div class="txt-news">
-            <div>
-              <p class="txt-news-p-1">2022 Market performace : Crypto vs Stock, which one is better to invest in 2022?</p>
-            </div>
-            <div>
-              <p class="txt-news-p-2">By <span>“Olivia Capzallo”</span>, Jan 25, 2022</p>
-              <div class="txt-news-p">
-                <p class="txt-news-p-2">30,190</p>
-                <p class="txt-news-p-2">30</p>
-                <p class="txt-news-p-2"><a href="#" class="txt-news-a">more</a></p>
+          <div class="news-1-sec-1">
+            <div class="news-image-1"></div>
+            <div class="txt-news">
+              <div>
+                <p class="txt-news-p-1">2022 Market performace : Crypto vs Stock, which one is better to invest in 2022?</p>
+              </div>
+              <div>
+                <p class="txt-news-p-2">By <span>“Olivia Capzallo”</span>, Jan 25, 2022</p>
+                <div class="txt-news-p">
+                  <p class="txt-news-p-2">30,190</p>
+                  <p class="txt-news-p-2">30</p>
+                  <p class="txt-news-p-2"><a href="#" class="txt-news-a">more</a></p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="news-image-1"></div>
-          <div class="txt-news">
-            <div>
-              <p class="txt-news-p-1">2022 Market performace : Crypto vs Stock, which one is better to invest in 2022?</p>
-            </div>
-            <div>
-              <p class="txt-news-p-2">By <span>“Olivia Capzallo”</span>, Jan 25, 2022</p>
-              <div class="txt-news-p">
-                <p class="txt-news-p-2">30,190</p>
-                <p class="txt-news-p-2">30</p>
-                <p class="txt-news-p-2"><a href="#" class="txt-news-a">more</a></p>
+          <div class="news-1-sec-1">
+            <div class="news-image-1"></div>
+            <div class="txt-news">
+              <div>
+                <p class="txt-news-p-1">2022 Market performace : Crypto vs Stock, which one is better to invest in 2022?</p>
+              </div>
+              <div>
+                <p class="txt-news-p-2">By <span>“Olivia Capzallo”</span>, Jan 25, 2022</p>
+                <div class="txt-news-p">
+                  <p class="txt-news-p-2">30,190</p>
+                  <p class="txt-news-p-2">30</p>
+                  <p class="txt-news-p-2"><a href="#" class="txt-news-a">more</a></p>
+                </div>
               </div>
             </div>
           </div>
@@ -216,19 +232,20 @@
               </div>
             </div>
           </div>
-          <div class="subscribe-sec">
-            <div class="subscribe-txt-container">
-              <p class="subscribe-txt">
-                Subscribe to our newsletter to get notification about new updates, information, discount and etc
-              </p>
-            </div>
-            <div class="subscribe-form-container">
-              <input type="email" placeholder="Email" class="input-email" />
-              <input type="submit" value="Subscribe" placeholder="Email" class="input-submit" />
-            </div>
-          </div>
         </div>
       </section>
+    </section>
+    <section class="subscribe-sec">
+      <div class="subscribe-txt-container">
+        <p class="subscribe-txt">
+          Subscribe to our newsletter to get notification about new updates, information, discount and etc.
+        </p>
+      </div>
+      <form class="subscribe-form-container" name="form" action="#" method="post" onsubmit="return false">
+        <input type="email" placeholder="Example@gmail.com" class="input-email" id="input-email" />
+        <input type="submit" value="Subscribe" class="input-submit" id="input-submit" onclick="validateEmail()"/>
+      </form>
+      <p class="email-result" id="email-result"></p>
     </section>
     <section class="footer-sec">
       <div class="footer-1">
@@ -246,46 +263,26 @@
           <div class="footer-social-icon">
             <ul class="footer-social-icon-ul">
               <li>
-                <a href="#" title="icon" class="a-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h14V5H5zm12.3 10.94l.955.954v.05h-4.921v-.05l1.004-.954c.1-.1.15-.2.15-.351V9.664c0-.252 0-.603.051-.904l-3.314 8.285h-.05L7.76 9.412c-.05-.2-.1-.2-.15-.3v5.02c-.051.352 0 .653.15.955l1.356 1.807v.05H5.5v-.05l1.356-1.858c.15-.3.2-.652.15-.954V8.56c0-.251-.05-.553-.25-.753L5.851 6.55V6.5h3.515l2.912 6.478L14.84 6.5h3.415v.05l-.954 1.105c-.1.1-.15.251-.15.351v7.633c0 .1.05.251.15.301z"
-                      fill="rgba(98,96,104,1)"/></svg></a>
+                <a href="#" title="icon" class="a-icon"><i class="ri-medium-line"></i></a>
               </li>
               <li>
-                <a href="#" title="icon" class="a-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M15.3 5.55a2.9 2.9 0 0 0-2.9 2.847l-.028 1.575a.6.6 0 0 1-.68.583l-1.561-.212c-2.054-.28-4.022-1.226-5.91-2.799-.598 3.31.57 5.603 3.383 7.372l1.747 1.098a.6.6 0 0 1 .034.993L7.793 18.17c.947.059 1.846.017 2.592-.131 4.718-.942 7.855-4.492 7.855-10.348 0-.478-1.012-2.141-2.94-2.141zm-4.9 2.81a4.9 4.9 0 0 1 8.385-3.355c.711-.005 1.316.175 2.669-.645-.335 1.64-.5 2.352-1.214 3.331 0 7.642-4.697 11.358-9.463 12.309-3.268.652-8.02-.419-9.382-1.841.694-.054 3.514-.357 5.144-1.55C5.16 15.7-.329 12.47 3.278 3.786c1.693 1.977 3.41 3.323 5.15 4.037 1.158.475 1.442.465 1.973.538z"
-                      fill="rgba(98,96,104,1)"/></svg></a>
+                <a href="#" title="icon" class="a-icon"><i class="ri-twitter-line"></i></a>
               </li>
               <li>
-                <a href="#" title="icon" class="a-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M13.914 14.58a8.998 8.998 0 0 1-.484.104 7.06 7.06 0 0 1-2.664-.01c-.154-.03-.372-.083-.653-.158l-.921 1.197c-2.273-.073-3.137-1.596-3.137-1.596 0-3.381 1.481-6.122 1.481-6.122 1.481-1.133 2.89-1.102 2.89-1.102l.403.525a1.12 1.12 0 0 1 .112-.01 8.527 8.527 0 0 1 2.314.01l.442-.525s1.41-.031 2.89 1.103c0 0 1.482 2.74 1.482 6.121 0 0-.875 1.522-3.148 1.596l-1.007-1.134zM10.076 11C9.475 11 9 11.45 9 12s.485 1 1.076 1c.6 0 1.075-.45 1.075-1 .01-.55-.474-1-1.075-1zm3.848 0c-.6 0-1.075.45-1.075 1s.485 1 1.075 1c.601 0 1.076-.45 1.076-1s-.475-1-1.076-1zM21 23l-4.99-5H19V4H5v14h11.003l.57 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v19z"
-                      fill="rgba(98,96,104,1)"/></svg></a>
+                <a href="#" title="icon" class="a-icon"><i class="ri-discord-line"></i></a>
               </li>
               <li>
-                <a href="#" title="icon" class="a-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M19.606 6.995c-.076-.298-.292-.523-.539-.592C18.63 6.28 16.5 6 12 6s-6.628.28-7.069.403c-.244.068-.46.293-.537.592C4.285 7.419 4 9.196 4 12s.285 4.58.394 5.006c.076.297.292.522.538.59C5.372 17.72 7.5 18 12 18s6.629-.28 7.069-.403c.244-.068.46-.293.537-.592C19.715 16.581 20 14.8 20 12s-.285-4.58-.394-5.005zm1.937-.497C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5v-7l6 3.5-6 3.5z"
-                      fill="rgba(98,96,104,1)"/></svg></a>
+                <a href="#" title="icon" class="a-icon"><i class="ri-youtube-line"></i></a>
               </li>
               <li>
-                <a href="#" title="icon" class="a-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M13 19.938A8.001 8.001 0 0 0 12 4a8 8 0 0 0-1 15.938V14H9v-2h2v-1.654c0-1.337.14-1.822.4-2.311A2.726 2.726 0 0 1 12.536 6.9c.382-.205.857-.328 1.687-.381.329-.021.755.005 1.278.08v1.9H15c-.917 0-1.296.043-1.522.164a.727.727 0 0 0-.314.314c-.12.226-.164.45-.164 1.368V12h2.5l-.5 2h-2v5.938zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"
-                      fill="rgba(98,96,104,1)"/></svg></a>
+                <a href="#" title="icon" class="a-icon"><i class="ri-facebook-circle-line"></i></a>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-2">
-        <ul class="footer-2-text">
+        <ul class="footer-2-ul">
           <li><a href="#" class="footer-2-text-a">Terms & Conditions</a></li>
           <li><a href="#" class="footer-2-text-a">Privacy</a></li>
           <li><a href="#" class="footer-2-text-a">Policy</a></li>
@@ -294,5 +291,6 @@
         </ul>
       </div>
     </section>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

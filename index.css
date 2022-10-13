@@ -5,6 +5,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: whitesmoke;
   display: flex;
@@ -12,31 +16,32 @@ body {
   justify-content: center;
 }
 
-/* ----------***HEADER-AND-NAVIGATION-BAR---------- */
+/* ----------***HEADER---------- */
 
 header {
   width: 100%;
-  height: 45px;
+  height: auto;
   background-color: whitesmoke;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   position: sticky;
   top: 0;
 }
 
 nav {
   width: 83.3%;
-  height: 100%;
+  height: 45px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-ul {
-  width: 560px;
+.header-ul {
+  width: 50%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -85,19 +90,54 @@ a#sign-btn:hover {
   transition: all 0.15s ease-in;
 }
 
-/* ----------HEADER-AND-NAVIGATION-BAR***---------- */
+/* ----------HEADER***---------- */
+
+/* ----------***BURGER-MENU---------- */
+
+.burger-sec {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: +999;
+  display: none;
+  padding-bottom: 15px;
+}
+
+.burger-ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.burger-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  transition: all 0.15s ease-in;
+}
+
+.burger-icon:hover {
+  color: #f9b500;
+  transition: all 0.15s ease-in;
+}
+
+/* ----------BURGER-MENU***---------- */
 
 /* ----------***IFO-BAR-SECTION---------- */
 
-section.info-bar-sec {
+.info-bar-sec {
   width: 83.3%;
   height: 94vh;
 }
 
-section.info-bar {
+.info-bar {
   width: 100%;
   height: 100%;
-  padding: 25px 0px;
+  padding: 24px 0px;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
@@ -109,35 +149,33 @@ section.info-bar {
   border-radius: 16px;
 }
 
-div.info-1 {
+.info-1 {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
   background: linear-gradient(0deg, rgba(249, 181, 0, 1), rgba(249, 181, 0, 0)), url(images/Image-1.jpg);
   background-repeat: no-repeat;
-  background-size: 900px auto;
+  background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column-reverse;
   transition: all 0.5s ease-out;
 }
 
-div.info-1:hover {
-  background-size: 1000px auto;
-  transition: all 0.5s ease-out;
+.info-1:hover {
   cursor: pointer;
 }
 
-div.l-info-txt {
+.l-info-txt {
   width: auto;
-  height: 50px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 15px 30px;
+  margin: 20px 30px;
   overflow: hidden;
 }
 
-h6.l-info-txt-h6 {
+.l-info-txt-h6 {
   height: 50%;
   font-size: 20px;
   font-weight: 800;
@@ -160,11 +198,10 @@ h6.l-info-txt-h6 {
 
 .s-info-txt {
   width: 90%;
-  height: 45px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   margin: 15px 20px;
-  overflow: hidden;
 }
 
 .s-info-txt-h6 {
@@ -188,86 +225,73 @@ h6.l-info-txt-h6 {
   font-weight: 400;
 }
 
-div.info-2 {
+.info-2 {
   background: linear-gradient(0deg, rgba(249, 181, 0, 1), rgba(249, 181, 0, 0)), url(images/Image-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 410px auto;
+  background-size: cover;
   display: flex;
   flex-direction: column-reverse;
   transition: all 0.5s ease-out;
 }
 
-div.info-2:hover {
-  background-size: 500px auto;
-  transition: all 0.5s ease-out;
+.info-2:hover {
   cursor: pointer;
 }
 
-div.info-3 {
+.info-3 {
   background: linear-gradient(0deg, rgba(249, 181, 0, 1), rgba(249, 181, 0, 0)), url(images/Image-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 410px auto;
+  background-size: cover;
   display: flex;
   flex-direction: column-reverse;
   transition: all 0.5s ease-out;
 }
 
-div.info-3:hover {
-  background-size: 500px auto;
-  transition: all 0.5s ease-out;
+.info-3:hover {
   cursor: pointer;
 }
 
-div.info-4 {
+.info-4 {
   background: linear-gradient(0deg, rgba(249, 181, 0, 1), rgba(249, 181, 0, 0)), url(images/Image-4.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 410px auto;
-
+  background-size: cover;
   display: flex;
   flex-direction: column-reverse;
   transition: all 0.5s ease-out;
 }
 
-div.info-4:hover {
-  background-size: 500px auto;
-  transition: all 0.5s ease-out;
+.info-4:hover {
   cursor: pointer;
 }
 
-div.info-5 {
+.info-5 {
   background: linear-gradient(0deg, rgba(249, 181, 0, 1), rgba(249, 181, 0, 0)), url(images/Image-5.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 410px auto;
-
+  background-size: cover;
   display: flex;
   flex-direction: column-reverse;
   transition: all 0.5s ease-out;
 }
 
-div.info-5:hover {
-  background-size: 500px auto;
-  transition: all 0.5s ease-out;
+.info-5:hover {
   cursor: pointer;
 }
 
-div.info-6 {
+.info-6 {
   background: linear-gradient(0deg, rgba(249, 181, 0, 1), rgba(249, 181, 0, 0)), url(images/Image-6.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 410px auto;
-
+  background-size: cover;
   display: flex;
   flex-direction: column-reverse;
   transition: all 0.5s ease-out;
 }
 
-div.info-6:hover {
-  background-size: 500px auto;
-  transition: all 0.5s ease-out;
+.info-6:hover {
   cursor: pointer;
 }
 
@@ -275,22 +299,22 @@ div.info-6:hover {
 
 /* ---------***NEWS-SECTION---------- */
 
-section.news-sec {
+.news-sec {
   width: 83.3%;
-  height: 700px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 25px;
+  padding-top: 32px;
 }
 
-section.news-sec-1 {
+.news-sec-1 {
   width: 66.6%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-section.news-sec-2 {
+.news-sec-2 {
   width: 33.4%;
   height: 100%;
   padding-left: 50px;
@@ -299,7 +323,7 @@ section.news-sec-2 {
 .news-header {
   width: 100%;
   height: 35px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -312,20 +336,25 @@ section.news-sec-2 {
   color: #212121;
 }
 
-div.news-1 {
+.news-1 {
   width: 100%;
-  height: 635px;
+  height: auto;
 }
 
-div.news-image-1 {
+.news-1-sec-1 {
+  width: 100%;
+  height: auto;
+}
+
+.news-image-1 {
   width: 100%;
   height: 205px;
   border-radius: 16px;
   background: url(images/Image-7.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 870px auto;
-  margin-top: 25px;
+  background-size: cover;
+  margin-top: 24px;
 }
 
 .price-box {
@@ -354,8 +383,8 @@ div.news-image-1 {
 
 .txt-news {
   width: 100%;
-  height: 90px;
-  padding-top: 30px;
+  height: auto;
+  padding-top: 24px;
 }
 
 .txt-news-p {
@@ -391,10 +420,10 @@ div.news-image-1 {
 
 .mining-news-sec {
   width: 83.3%;
-  height: 670px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 55px;
+  margin-top: 56px;
 }
 
 .mining-news-sec-1 {
@@ -410,6 +439,7 @@ div.news-image-1 {
   flex-wrap: wrap;
   align-items: center;
   border-bottom: 2px solid #626068;
+  margin-bottom: 24px;
 }
 
 h6.mining-news {
@@ -426,12 +456,19 @@ h6.mining-news {
 
 div.mining-news-news {
   width: 100%;
-  height: 635px;
-  padding-top: 25px;
+  height: 625px;
+  margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
-  gap: 30px;
+  column-gap: 30px;
+}
+
+.news-2,
+.news-3,
+.news-4,
+.news-5 {
+  margin-bottom: 30px;
 }
 
 div.news-2-image {
@@ -441,7 +478,7 @@ div.news-2-image {
   background: url(images/Image-8.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 420px auto;
+  background-size: cover;
 }
 
 div.news-3-image {
@@ -451,7 +488,7 @@ div.news-3-image {
   background: url(images/Image-9.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 420px auto;
+  background-size: cover;
 }
 
 div.news-4-image {
@@ -461,7 +498,7 @@ div.news-4-image {
   background: url(images/Image-10.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 420px auto;
+  background-size: cover;
 }
 
 div.news-5-image {
@@ -471,7 +508,7 @@ div.news-5-image {
   background: url(images/Image-11.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 420px auto;
+  background-size: cover;
 }
 
 .news-2-txt {
@@ -498,86 +535,113 @@ div.news-5-image {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 0px;
+  padding-bottom: 10px;
 }
 
 .popular-sec {
   width: 100%;
-  height: 635px;
-  padding-top: 25px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto auto 120px;
-  gap: 30px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
 }
 
-div.popular-1 {
-  grid-row: 1 / span 3;
-  margin-bottom: 25px;
-}
-
-div.popular-2 {
-  grid-row: 4 / span 3;
-}
-
-div.subscribe-sec {
+.popular-1,
+.popular-2 {
   width: 100%;
+  height: 275px;
 }
 
-div.subscribe-txt-container {
-  width: 100%;
-  height: 50%;
-  padding-top: 5px;
-  margin-top: 10px;
-  text-align: justify;
+/* ----------MINING-NEWS-SECTION***---------- */
+
+/* ----------***SUBSCRIBE-SECTION---------- */
+
+.subscribe-sec {
+  width: 83.3%;
+  height: auto;
+  background-color: #f9b500;
+  padding: 30px 150px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-p.subscribe-txt {
+.subscribe-txt-container {
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-txt {
   color: #202020;
   font-size: 14px;
   font-weight: 400;
+  text-align: center;
 }
 
-div.subscribe-form-container {
-  width: 100%;
-  height: 50%;
+.subscribe-form-container {
+  width: 40vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .input-email {
-  width: 70%;
+  width: 60%;
   height: 30px;
-  margin-top: 15px;
+  padding-left: 10px;
   border: 2px solid #f9b500;
   border-radius: 10px;
   background-color: #f4f4f4;
+  margin-top: 16px;
 }
 
 .input-email::-webkit-input-placeholder {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  margin-left: 10px;
 }
 
 .input-submit {
-  color: #f4f4f4;
+  color: #202020;
   font-size: 14px;
   font-weight: 400;
   border-radius: 10px;
-  width: 25%;
+  width: 35%;
   height: 30px;
   margin-left: 10px;
-  background-color: #f9b500;
+  background-color: whitesmoke;
   border: none;
+  cursor: pointer;
+  margin-top: 16px;
 }
 
-/* ----------MINING-NEWS-SECTION***---------- */
+.input-submit:hover {
+  background-color: #f9b500;
+  border: #202020 1px solid;
+}
+
+.email-result{
+  font-size: 14px;
+  color: #202020;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+/* ----------SUBSCRIBE-SECTION***---------- */
 
 /* ----------***FOOTER-SECTION---------- */
 
 .footer-sec {
   width: 100%;
-  height: 220px;
-  padding-top: 25px;
+  height: auto;
   margin-top: 40px;
   background-color: #202020;
   display: flex;
@@ -587,28 +651,41 @@ div.subscribe-form-container {
 
 div.footer-1 {
   width: 83.3%;
-  height: 70%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
 }
 
 div.footer-2 {
-  width: 83.3%;
-  height: 30%;
+  width: 49.8%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 50px 0px 20px 0px;
+}
+
+.footer-2-ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 div.footer-1-1 {
   width: 66.6%;
   height: 100%;
+  margin-top: 30px;
 }
 
 div.footer-1-2 {
   width: 33.4%;
   height: 100%;
   padding-left: 30px;
+  margin-top: 30px;
 }
 
 h6.footer-header {
@@ -617,13 +694,15 @@ h6.footer-header {
   color: whitesmoke;
   border-bottom: 2px solid #f9b500;
   padding-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .footer-text-1 {
   font-size: 14px;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: px;
   color: #626068;
+  text-align: justify;
 }
 
 .footer-text-2 {
@@ -648,11 +727,13 @@ h6.footer-social-text {
 
 div.footer-social-icon {
   width: 100%;
-  height: 65%;
+  height: auto;
+  margin-top: 10px;
 }
 
 .a-icon {
   color: #626068;
+  font-size: 28px;
 }
 
 svg {
@@ -663,6 +744,7 @@ svg {
 .footer-social-icon-ul {
   width: 100%;
   height: 55px;
+  margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -687,3 +769,156 @@ a.footer-2-text-a:hover {
 }
 
 /* ----------FOOTER-SECTION***---------- */
+
+/* ----------***@media-queries---------- */
+
+@media screen and (max-width: 899.9px) {
+  .header-ul {
+    display: none;
+  }
+
+  a.sign-btn {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+  }
+
+  .info-bar {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .info-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    background-size: cover;
+  }
+
+  .info-1:hover {
+    background-size: cover;
+  }
+
+  .l-info-txt {
+    margin: 15px 20px;
+  }
+
+  .l-info-container-txt {
+    display: none;
+  }
+
+  .s-info-container-txt {
+    display: none;
+  }
+
+  .l-info-txt-h6 {
+    font-size: 13px;
+  }
+
+  .news-sec-1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .news-sec-2 {
+    display: none;
+  }
+
+  .news-header {
+    width: 100%;
+    height: 35px;
+  }
+
+  .news-1 {
+    width: 100%;
+    height: 635px;
+  }
+
+  .mining-news-sec {
+    margin-top: 30px;
+  }
+
+  .mining-news-sec-1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mining-news-sec-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 599.9px) {
+  .info-bar {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto);
+  }
+
+  .info-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-1:hover {
+    background-size: cover;
+  }
+
+  .info-2,
+  .info-3,
+  .info-4,
+  .info-5,
+  .info-6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news-image-1 {
+    background-size: cover;
+  }
+
+  .mining-news-sec {
+    margin-top: 56px;
+  }
+
+  div.mining-news-news {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 30px;
+  }
+
+  div.footer-2 {
+    margin: 10px 0px;
+  }
+
+  div.footer-1-1,
+  div.footer-1-2 {
+    width: 100%;
+    height: auto;
+    padding-left: 0px;
+  }
+
+  .subscribe-form-container {
+    width: 60vw;
+    flex-direction: column;
+  }
+
+  .input-email,
+  .input-submit {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .input-submit {
+    margin-top: 8px;
+  }
+}
+
+/* ----------@media-queries***---------- */
