@@ -9,10 +9,12 @@ Goal :
   - ✅ Practicing HTML & CSS and building my first project with them.
 
 How to run :
-  - First, clone the project by cloning on your system : 
+  - 1️⃣ First, clone the project by cloning on your system : 
+    ```cmd
     git clone url
-  - second, open the project with a text editor or IDE
-  - Third, rund the project with "live server"
+    ```
+  - 2️⃣ second, open the project with a text editor or IDE
+  - 3️⃣ Third, rund the project with "live server"
 
 Contains :
   - 🔗 Figma link(UI link).
