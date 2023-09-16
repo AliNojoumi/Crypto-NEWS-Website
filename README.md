@@ -7,7 +7,15 @@ Features :
 
 Goal :
   - ✅ Practicing HTML & CSS and building my first project with them.
-  - 🔗 Contains Figma link(UI link).
+
+How to run :
+  - First, clone the project by cloning on your system : 
+    git clone url
+  - second, open the project with a text editor or IDE
+  - Third, rund the project with "live server"
+
+Contains :
+  - 🔗 Figma link(UI link).
   - 🔗 UI link: https://www.figma.com/file/myJ1VviTn3WUIZA1dVucq1/Crypto-NEWS-Website?node-id=0%3A1
 
 
