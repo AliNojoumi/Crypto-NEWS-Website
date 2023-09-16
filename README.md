@@ -1,5 +1,6 @@
 🪙 Crypto-NEWS-Website
 - 🌐 A website for checking NEWS about crypto(Only HTML & CSS).
+- <br/>
 - 📱 Fully responsive.
 - 💻 This project just contains HTML & CSS.
 - 🎯 The goal is to practice HTML & CSS.
